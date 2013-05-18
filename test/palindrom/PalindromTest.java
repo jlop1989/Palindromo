@@ -10,26 +10,26 @@ public class PalindromTest {
 
     @Test
     public void oneDigitNumberIsPalindrom() {
-        assertTrue(Palindrom.isPalindrom(9));
+        assertTrue(Palindrom.isPalindrom(new Integer(9)));
     }
     
     @Test
     public void PairDigitNumberIsPalindrom() {
-        assertTrue(Palindrom.isPalindrom(11));
+        assertTrue(Palindrom.isPalindrom(new Integer(11)));
     }
     
     @Test
     public void PairDigitNumberIsNotPalindrom() {
-        assertFalse(Palindrom.isPalindrom(10));
+        assertFalse(Palindrom.isPalindrom(new Integer(10)));
     }
     
     @Test
     public void OddDigitNumberIsPalindrom() {
-        assertTrue(Palindrom.isPalindrom(101));
+        assertTrue(Palindrom.isPalindrom(new Integer(101)));
     }
     
     @Test
     public void OddDigitNumberIsNotPalindrom() {
-        assertFalse(Palindrom.isPalindrom(102));
+        assertFalse(Palindrom.isPalindrom(new Integer(102)));
     }
 }
