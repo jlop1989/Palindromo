@@ -32,4 +32,14 @@ public class PalindromTest {
     public void OddDigitNumberIsNotPalindrom() {
         assertFalse(Palindrom.isPalindrom(new Integer(102)));
     }
+    
+    @Test
+    public void OddDigitOctalNumberIsPalindrom() {
+        assertTrue(Palindrom.isPalindrom(new Integer(0101)));
+    }
+    
+    @Test
+    public void OddDigitOctalNumberIsNotPalindrom() {
+        assertFalse(Palindrom.isPalindrom(new Integer(0102)));
+    }
 }
